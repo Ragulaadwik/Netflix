@@ -25,11 +25,11 @@ const toggle =()=>{
           Login
         </button>
       </nav>
-      { !modal &&   <div className="flex flex-col min-h-screen justify-center items-center text-center pb-[10%] ">
+      { !modal &&   <div className="flex flex-col min-h-screen max-sm:px-3 justify-center items-center text-center pb-[10%] ">
         <h1 className=" max-md:text-4xl  text-6xl py-7 max-md:py-2 text-white font-bold ">Welcome to Netflix </h1>
         <p className="text-white  max-md:text-xl font-semibold  text-3xl py-5 ">Find  your  all  series  and  movies  in  one  app </p>
-       <div> <input className="h-8 focus:outline-none px-2"  type="email" />
-       <button onClick={toggle} className="bg-red-500 text-base text-white px-3 hover:bg-black  transition-all ease-in py-1">Get Started.</button>
+       <div> <input className="h-8 focus:outline-none px-2  max-sm:w-1/2"  type="email" />
+       <button onClick={toggle} className="bg-red-500 text-base text-white px-[3px] hover:bg-black  transition-all ease-in py-1">Get Started.</button>
        </div>
       </div>}
       </section>

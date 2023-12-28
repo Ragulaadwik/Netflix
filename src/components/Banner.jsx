@@ -39,7 +39,7 @@ const Banner = () => {
     >
       {/* {"--image-bp-url": `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`} */}
       <div className=" flex flex-col justify-end items-start h-[400px] max-sm:h-[300px]   min-w-full text-white text-lg">
-        <h1 className="   font-bold text-4xl   ml-[50px] pb-[10px]   max-sm:pb-[10px]">
+        <h1 className="   font-bold text-4xl   md:ml-[50px]  max-sm:px-3 pb-[10px]   max-sm:pb-[10px]">
           {movie?.name || movie?.original_name}
         </h1>
         <div className="flex pt-[10px] ">
@@ -50,7 +50,7 @@ const Banner = () => {
             next
           </button>
         </div>
-        <p className="pt-[30px] max-w-[500px] ml-[50px] ">{ truncateHandler(movie?.overview,150)}</p>
+        <p className="pt-[30px] max-w-[500px] md:ml-[50px] max-sm:px-3 ">{ truncateHandler(movie?.overview,150)}</p>
       </div>
       <div className="w-full h-[80px] bg-gradient-to-b from-transparent to-black" />
     </header>
